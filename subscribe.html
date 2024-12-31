@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Subscribe</h1>
+        <p>Enter your credit card details to subscribe.</p>
+    </header>
+    <form class="subscribe-form" onsubmit="handleSubmit(event)">
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" required>
+        <label for="expiry">Expiry Date</label>
+        <input type="text" id="expiry" placeholder="MM/YY" required>
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" required>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
